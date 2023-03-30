@@ -7,10 +7,9 @@ import globalReducer from "state";
 import { Provider } from "react-redux";
 
 const store = configureStore({
-  reducer: {
-    global: globalReducer,
+  reducer: {global: globalReducer,
   },
-})
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +17,6 @@ root.render(
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
+    </React.StrictMode>
 );
 
