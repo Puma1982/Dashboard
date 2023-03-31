@@ -18,7 +18,8 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 boxShadow: "none",
             }}
         >
-            <Toolbar sx={{ justifyContent: "space-between" }}>
+        
+        <Toolbar sx={{ justifyContent: "space-between" }}>
 
 
 
