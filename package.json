@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.15",
+    "@mui/x-data-grid": "^6.0.3",
+    "@nivo/bar": "^0.80.0",
+    "@nivo/core": "^0.80.0",
+    "@nivo/geo": "^0.80.0",
+    "@nivo/pie": "^0.80.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "react-datepicker": "^4.10.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0"
+  }
+}
