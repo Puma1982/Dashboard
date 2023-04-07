@@ -10,6 +10,13 @@ import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
+
+//DATA IMPORTS FROM data/index.js file
+import User from "./models/User.js";
+import { dataUser } from "./data/index.js";
+
+
+
 /**CONFIGARATION */
 dotenv.config();
 const app = express();
@@ -37,6 +44,10 @@ mongoose
     })
     .then(() => {
         app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-    }).catch((error) => console.log(`${error} did not connect`));
+/**ADD DATA ONLY ONE TIME */
+User.insertMany(dataUser);
+
+    })
+    .catch((error) => console.log(`${error} you are not connect`));
 
 /**npm i react-redux @reduxjs/toolkit react-datepicker react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid @nivo/core @nivo/bar @nivo/geo @nivo/pie*/
