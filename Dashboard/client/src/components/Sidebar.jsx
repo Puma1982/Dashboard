@@ -119,7 +119,7 @@ const Sidebar = ({
           sx={{
             width: drawerWidth,
             '& .MuiDrawer-paper': {
-              color: theme.palette.secondary[200],
+              color: theme.palette.secondary[500],
               backgroundColor: theme.palette.background.alt,
               boxSixing: 'border-box',
               borderWidth: isNonMobile ? 0 : '2px',
@@ -177,7 +177,7 @@ const Sidebar = ({
                           color:
                             active === lcText
                               ? theme.palette.primary[600]
-                              : theme.palette.secondary[200],
+                              : theme.palette.secondary[600],
                         }}
                       >
                         {icon}
