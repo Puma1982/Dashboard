@@ -28,26 +28,26 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-/**ROUTES */
+/* ROUTES */
 app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
-/**MONGOOSE SETUP */
-
+/* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
 mongoose
-    .connect(process.env.MONGO_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
-    .then(() => {
-        app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 /**ADD DATA ONLY ONE TIME */
-User.insertMany(dataUser);
+//user.insertMany( dataUser );
+
 
     })
-    .catch((error) => console.log(`${error} you are not connect`));
+    .catch((error) => console.log(`${error}you are not connect`));
 
 /**npm i react-redux @reduxjs/toolkit react-datepicker react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid @nivo/core @nivo/bar @nivo/geo @nivo/pie*/
