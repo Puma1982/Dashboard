@@ -132,7 +132,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h3" fontWeight="bold">
-                    I-C-U
+                     I-C-U
                   </Typography>
                 </Box>
                 {!isNonMobile && (
@@ -146,7 +146,7 @@ const Sidebar = ({
               {navItems.map(({ text, icon }) => {
                 if (!icon) {
                   return (
-                    <Typography key={text} sx={{ m: '2.25rem 0 1rem 3rem' }}>
+                    <Typography key={text} sx={{ m: '0.8rem 0 0.5rem 3rem' }}>
                       {text}
                     </Typography>
                   );
@@ -200,8 +200,8 @@ const Sidebar = ({
                 component="img"
                 alt="profile"
                 src={profileImage}
-                height="43px"
-                width="43px"
+                height="50px"
+                width="50px"
                 borderRadius="50%"
                 sx={{ objectFit: "cover" }}
               />
@@ -224,8 +224,7 @@ const Sidebar = ({
                 sx={{
                   color: theme.palette.secondary[300],
                   fontSize: "25px ",
-                }}
-              />
+                }}/>
             </FlexBetween>
           </Box>
         </Drawer>
