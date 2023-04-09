@@ -89,8 +89,8 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 component="img"
                 alt="profile"
                 src={profileImage}
-                height="35px"
-                width="35px"
+                height="50px"
+                width="50px"
                 borderRadius="50%"
                 sx={{ objectFit: 'cover' }}
               />
