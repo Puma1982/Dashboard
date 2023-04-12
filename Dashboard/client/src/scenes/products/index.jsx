@@ -39,8 +39,7 @@ const Product = ({
         <Typography
           sx={{ fontSize: 14 }}
           color={theme.palette.secondary[700]}
-          gutterBottom
-        >
+          gutterBottom >
           {category}
         </Typography>
         <Typography variant="h5" component="div">
@@ -73,11 +72,8 @@ const Product = ({
           <Typography>id: {_id}</Typography>
           <Typography>Supply Left: {supply}</Typography>
           <Typography>
-            Yearly Sales This Year: {stat.yearlySalesTotal}
-          </Typography>
-          <Typography>
-            Yearly Units Sold This Year: {stat.yearlyTotalSoldUnits}
-          </Typography>
+            Yearly Sales This Year: {stat[0].yearlySalesTotal}</Typography>
+          <Typography>Yearly Units Sold This Year: {stat[0].yearlyTotalSoldUnits} </Typography>
         </CardContent>
       </Collapse>
     </Card>
@@ -87,7 +83,7 @@ const Product = ({
 
 const Products = () => {
   const { data, isLoading } = useGetProductsQuery();
-  const isNonMobile = useMediaQuery('(min-widht: 1000px)');
+  const isNonMobile = useMediaQuery("(min-widht: 1000px)");
 
 
   return (
@@ -105,7 +101,7 @@ const Products = () => {
             '& > div': { gridColumn: isNonMobile ? undefined : 'span 4' }
           }}
         >
-          {data.map(({
+          {data.map (({
             _id,
             name,
             description,
