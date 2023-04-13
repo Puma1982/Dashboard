@@ -48,7 +48,7 @@ mongoose
 /**ADD DATA ONLY ONE TIME */
 //Product.insertMany(dataProduct);
 //ProductStat.insertMany(dataProductStat);
-//user.insertMany( dataUser );
+//User.insertMany( dataUser );
 
 
     })
