@@ -46,7 +46,7 @@ const Product = ({
           {name}
         </Typography>
         <Typography sx={{ mb: '1.7rem' }} color={theme.palette.secondary[400]}>
-          ${Number(price).toFixed(2)}
+          {Number(price).toFixed(2)} Sek
         </Typography>
         <Rating value={rating} readOnly />
         <Typography variant="body2">{description}</Typography>
